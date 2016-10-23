@@ -587,6 +587,26 @@
              "movement" (next-word-end, 1, 0, 1)
              "copy-clipboard" ()
              "delete-selection" () };
+  bind "l" { "begin-macro" ()
+             "set-mode" ("vim-insert", permanent)
+             "movement" (next-char, 1, 0, 1)
+             "copy-clipboard" ()
+             "delete-selection" () };
+  bind "h" { "begin-macro" ()
+             "set-mode" ("vim-insert", permanent)
+             "movement" (previous-char, 1, 0, 1)
+             "copy-clipboard" ()
+             "delete-selection" () };
+  bind "k" { "begin-macro" ()
+             "set-mode" ("vim-insert", permanent)
+             "movement" (previous-line, 1, 0, 1)
+             "copy-clipboard" ()
+             "delete-selection" () };
+  bind "j" { "begin-macro" ()
+             "set-mode" ("vim-insert", permanent)
+             "movement" (next-line, 1, 0, 1)
+             "copy-clipboard" ()
+             "delete-selection" () };
 
   bind "0" { "begin-macro" ()
              "set-mode" ("vim-insert", permanent)
